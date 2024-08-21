@@ -1,42 +1,42 @@
 .user-home-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 16px;
-    background: #f4f5f8;
-  }
-  
-  .welcome-card {
-    width: 100%;
-    max-width: 600px;
-    background: linear-gradient(170deg, rgba(29, 220, 61, 0.9) 0%, rgba(22, 17, 168, 0.9) 68%, rgba(51, 87, 247, 0.9) 100%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  .action-button {
-    margin-top: 15px;
-    padding: 14px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #34eb92, #3e7fff);
-    color: #fff;
-    transition: background 0.3s ease, transform 0.3s ease;
-    border: none;
-    font-size: 16px;
-  }
-  
-  .action-button:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(135deg, #2dbf7f, #2b6bff);
-  }
-  
-  ion-button {
-    margin-top: 10px;
-  }
-  
-  ion-icon {
-    color: #fff;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  --background: url('/assets/back.jpg') no-repeat center center / cover; /* Background image */
+  background-color: transparent; /* Ensure the background color is transparent */
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: transparent; /* Lilac gradient */
+  color: #120d0d; /* White text */
+}
+
+.action-button {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 25px;
+  background: transparent; /* Lilac gradient */
+  color: #0c0a0a; 
+  border: none;
+  font-size: 16px;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #5a3a73, #ab88ab); /* Darker lilac on hover */
+}
+
+ion-button {
+  margin-top: 10px;
+}
+
+ion-icon {
+  color: #110e0e; /* White icons */
+}

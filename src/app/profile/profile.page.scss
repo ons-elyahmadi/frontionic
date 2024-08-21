@@ -1,86 +1,85 @@
-/* Centrage vertical et horizontal de la carte */
 .profile-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centre verticalement */
-    align-items: center; /* Centre horizontalement */
-    height: 100vh; /* Occupe toute la hauteur de l'écran */
-    background: #3b5998; /* Couleur de fond */
-    padding: 0 16px;
-    margin: 0;
-  }
-  
-  .profile-header {
-    width: 100%;
-    height: 150px; /* Réduit la hauteur pour un design plus épuré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-  }
-  
-  .header-image {
-    max-width: 120px; /* Réduit la taille de l'image */
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .profile-card {
-    width: 100%;
-    max-width: 600px;
-    background: linear-gradient(170deg, rgba(29, 220, 61, 0.9) 0%, rgba(22,17,168,0.9) 68%, rgba(51,87,247,0.9) 100%);
-    padding: 20px; /* Réduit le padding pour un design plus compact */
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Centre le texte dans la carte */
-  }
-  
-  /* Styles pour les éléments de formulaire */
-  ion-item {
-    margin-bottom: 20px; /* Augmente l'espace entre les éléments */
-    --background: transparent;
-    --border-radius: 10px; /* Coins arrondis */
-    --border-width: 1px;
-    --border-color: #fff; /* Bordure blanche pour le champ de saisie */
-  }
-  
-  ion-input {
-    --padding-start: 0; /* Élimine le padding par défaut */
-    color: #fff; /* Couleur du texte dans le champ de saisie */
-  }
-  
-  ion-label {
-    color: #fff; /* Texte blanc */
-    font-size: 14px; /* Taille de police améliorée */
-  }
-  
-  ion-icon {
-    color: #fff; /* Icônes blanches */
-  }
-  
-  /* Styles pour les boutons */
-  .update-button,
-  .home-button {
-    margin-top: 15px;
-    padding: 14px; /* Augmente le padding pour des boutons plus larges */
-    border-radius: 25px; /* Coins plus arrondis */
-    background: linear-gradient(135deg, #34eb92, #3e7fff); /* Dégradé de couleur */
-    color: #fff; /* Couleur du texte blanc */
-    transition: background 0.3s ease, transform 0.3s ease; /* Transition pour les changements d'état */
-    border: none; /* Supprime les bordures par défaut */
-    font-size: 16px; /* Taille de police améliorée */
-  }
-  
-  .update-button:hover,
-  .home-button:hover {
-    transform: translateY(-2px); /* Réduit l'effet d'élévation au survol */
-    background: linear-gradient(135deg, #2dbf7f, #2b6bff); /* Couleur plus foncée au survol */
-  }
-  
-  .already-have-account {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #fff; /* Texte blanc pour le lien */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: center; /* Horizontal center */
+  height: 100vh; /* Full screen height */
+  --background: url('/assets/imgg.jpg') no-repeat center center / cover;
+  background-color: transparent; /* Transparent background */
+  padding: 0 16px;
+  margin: 0;
+}
+
+.profile-header {
+  width: 100%;
+  height: 150px; /* Reduced height for a sleeker design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Transparent background */
+}
+
+.header-image {
+  max-width: 120px; /* Reduced image size */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  background: transparent; /* Lilac gradient */
+  padding: 40px; /* Compact padding */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text */
+}
+
+ion-item {
+  margin-bottom: 20px; /* More space between items */
+  --background: transparent; /* Transparent background */
+  --border-radius: 10px; /* Rounded corners */
+  --border-width: 1px;
+  --font-size: 16px;
+  --border-color: #0b0a0a; /* White border for input fields */
+}
+
+ion-input {
+  --padding-start: 0; /* Remove default padding */
+  color: #100f0f; /* White text color */
+  --font-size: 16px;
+}
+
+ion-label {
+  color: #0a0a0a; /* White label text */
+  font-size: 14px; /* Improved font size */
+}
+
+ion-icon {
+  color: #110e0e; /* White icons */
+}
+
+.update-button,
+.home-button {
+  margin-top: 15px;
+  padding: 14px; /* Larger padding for wider buttons */
+  border-radius: 25px; /* More rounded corners */
+ 
+  color: #050505; /* White text color */
+
+  border: none; /* Remove default borders */
+  font-size: 16px; /* Improved font size */
+}
+
+.update-button:hover,
+.home-button:hover {
+  transform: translateY(-2px); /* Slight elevation effect on hover */
+  background: linear-gradient(135deg, #5a3a73, #ab88ab); /* Darker lilac on hover */
+}
+
+.already-have-account {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #141313; /* White text for the link */
+}
