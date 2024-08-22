@@ -1,18 +1,67 @@
 /* src/app/pages/equipment/equipment.page.scss */
+
+/* Styling for the search bar */
+/* src/app/pages/equipment/equipment.page.scss */
+
+/* Container to center the search bar */
+.searchbar-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 16px; /* Margin around the container */
+  color: #000;
+}
+
+/* Styling for the search bar */
 .searchbar {
-    margin: 10px;
-  }
-  
-  .list-item {
-    margin: 10px 0;
-  }
-  
-  .avatar img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .action-button {
-    margin: 0 5px;
-  }
-  
+  width: 100%; /* Full width of its container */
+  max-width: 500px; /* Limit the maximum width */
+  --background: #fff; /* White background for search bar */
+  --color: #6c4987; /* Lilac text color */
+  --placeholder-color: #d3d3d3; /* Light gray for placeholder text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+
+/* Styling for ion-list and ion-item */
+.list-item {
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+  padding: 16px; /* Padding for spacing */
+  --background: url('/assets/rr') no-repeat center center / cover; /* Background image */
+  border-radius: 10px; /* Rounded corners */
+  margin: 8px 16px; /* Margins for spacing */
+  box-shadow: 0 2px 4px rgba(113, 93, 93, 0.1); /* Light shadow */
+}
+
+/* Styling for ion-label inside list items */
+ion-label {
+  color: #0f0e0e; /* Dark text color for readability */
+}
+
+/* Styling for action buttons */
+.action-button {
+  margin: 0 4px; /* Margin between buttons */
+}
+
+/* Styling for floating action button (FAB) */
+.fab-button {
+  background: #6c4987; /* Lilac background */
+  color: #fff; /* White icon color */
+  border-radius: 50%; /* Circular button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+/* Styling for FAB icons */
+.fab-button ion-icon {
+  font-size: 24px; /* Size of the icon */
+}
+
+/* Styling for FAB hover effect */
+.fab-button:hover {
+  background: #5a3a73; /* Darker lilac on hover */
+}
+
+/* Optional: Ensure all buttons have the same font size */
+ion-button {
+  font-size: 16px; /* Consistent font size */
+}
