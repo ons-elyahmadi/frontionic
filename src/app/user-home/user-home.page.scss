@@ -1,42 +1,59 @@
+/* Centrage du contenu de la page et couleur de fond */
 .user-home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f7f8fc;
+  text-align: center;
+}
+
+/* Carte d'accueil principale avec coins arrondis */
+.home-card {
+  background-color: white;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 16px;
-  --background: url('/assets/back.jpg') no-repeat center center / cover; /* Background image */
-  background-color: transparent; /* Ensure the background color is transparent */
 }
 
-.welcome-card {
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background: transparent; /* Lilac gradient */
-  color: #120d0d; /* White text */
+/* Style pour le titre de bienvenue */
+.home-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #6b5aed; /* Couleur violette pour le titre */
+  margin-bottom: 5px;
 }
 
+/* Style pour le sous-titre */
+.home-subtitle {
+  font-size: 0.9em;
+  color: #8a94a6;
+  margin-bottom: 20px;
+}
+
+/* Boutons d'action */
 .action-button {
-  margin-top: 15px;
-  padding: 14px;
-  border-radius: 25px;
-  background: transparent; /* Lilac gradient */
-  color: #0c0a0a; 
-  border: none;
-  font-size: 16px;
-}
-
-.action-button:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(135deg, #5a3a73, #ab88ab); /* Darker lilac on hover */
-}
-
-ion-button {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 8px;
+  --border-color: #6b5aed; /* Bordure violette pour les boutons */
+  color: #6b5aed;
+  font-weight: bold;
   margin-top: 10px;
 }
 
-ion-icon {
-  color: #110e0e; /* White icons */
+/* Bouton de déconnexion */
+.logout-button {
+  width: 100%;
+  max-width: 340px;
+  --background: #6b5aed; /* Couleur violette pour le bouton de déconnexion */
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
 }

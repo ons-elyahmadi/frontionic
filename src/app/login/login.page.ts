@@ -11,6 +11,8 @@ import { ToastController } from '@ionic/angular';
 export class LoginPage {
   email: string ='';
   password: string='';
+   passwordType: string = 'password'; // Initially set the password type to 'password'
+  passwordIcon: string = 'eye-off-outline'
 
   constructor(
     private authService: AuthService,
@@ -63,6 +65,16 @@ async login() {
       color: 'warning'
     });
     toast.present();
+  }
+  
+}
+togglePasswordVisibility() {
+  if (this.passwordType === 'password') {
+    this.passwordType = 'text';
+    this.passwordIcon = 'eye-outline';
+  } else {
+    this.passwordType = 'password';
+    this.passwordIcon = 'eye-off-outline';
   }
 }
 }
