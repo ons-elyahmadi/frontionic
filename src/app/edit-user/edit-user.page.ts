@@ -58,4 +58,9 @@ export class EditUserPage implements OnInit {
       console.error('Error updating user:', error);
     }
   }
+  logout() {
+    // Clear any authentication tokens or session data here
+    localStorage.removeItem('authToken'); // Example for clearing token
+    this.router.navigate(['/login']); // Navigate to login page
+  }
 }

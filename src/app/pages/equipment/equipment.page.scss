@@ -1,67 +1,75 @@
-/* src/app/pages/equipment/equipment.page.scss */
-
-/* Styling for the search bar */
-/* src/app/pages/equipment/equipment.page.scss */
-
-/* Container to center the search bar */
+/* Centered and Smaller Searchbar */
 .searchbar-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  margin: 16px; /* Margin around the container */
-  color: #000;
+  justify-content: center;
+  padding: 10px 0;
 }
 
-/* Styling for the search bar */
 .searchbar {
-  width: 100%; /* Full width of its container */
-  max-width: 500px; /* Limit the maximum width */
-  --background: #fff; /* White background for search bar */
-  --color: #6c4987; /* Lilac text color */
-  --placeholder-color: #d3d3d3; /* Light gray for placeholder text */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Light shadow */
+  width: 80%; /* Adjust width to make it smaller */
+  max-width: 500px;
+  --background: #e0e4eb;
+  border-radius: 8px;
 }
 
+/* White background for side menu */
+ion-menu .menu-content {
+  --background: #ffffff; /* Set background to white */
+  color: #333; /* Dark text for contrast on white */
+}
 
-/* Styling for ion-list and ion-item */
+ion-menu .menu-content ion-item {
+  --color: #6b5aed; /* Theme color for icons and text */
+}
+
+ion-toolbar[color="light"] {
+  --background: #ffffff;
+}
+
+/* Equipment list item styling */
 .list-item {
-  border-bottom: 1px solid #e0e0e0; /* Light gray border */
-  padding: 16px; /* Padding for spacing */
-  --background: url('/assets/rr') no-repeat center center / cover; /* Background image */
-  border-radius: 10px; /* Rounded corners */
-  margin: 8px 16px; /* Margins for spacing */
-  box-shadow: 0 2px 4px rgba(113, 93, 93, 0.1); /* Light shadow */
+  --background: white;
+  border-radius: 8px;
+  margin: 5px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 12px;
 }
 
-/* Styling for ion-label inside list items */
-ion-label {
-  color: #0f0e0e; /* Dark text color for readability */
+/* Avatar styling for equipment image */
+.equipment-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-/* Styling for action buttons */
+.equipment-avatar ion-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Icon styling for equipment details */
+.detail-icon {
+  margin-right: 8px;
+  color: #6b5aed;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+/* Action button styling */
 .action-button {
-  margin: 0 4px; /* Margin between buttons */
+  --color: #6b5aed;
 }
 
-/* Styling for floating action button (FAB) */
+.action-button[color="danger"] {
+  --color: #ff4d4d;
+}
+
+/* Floating action button styling */
 .fab-button {
-  background: #6c4987; /* Lilac background */
-  color: #fff; /* White icon color */
-  border-radius: 50%; /* Circular button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
-}
-
-/* Styling for FAB icons */
-.fab-button ion-icon {
-  font-size: 24px; /* Size of the icon */
-}
-
-/* Styling for FAB hover effect */
-.fab-button:hover {
-  background: #5a3a73; /* Darker lilac on hover */
-}
-
-/* Optional: Ensure all buttons have the same font size */
-ion-button {
-  font-size: 16px; /* Consistent font size */
+  --background: #6b5aed;
+  color: white;
 }

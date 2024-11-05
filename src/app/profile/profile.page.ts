@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -9,7 +10,7 @@ import { ProfileService } from '../services/profile.service';
 export class ProfilePage implements OnInit {
   profile: any = {};
 
-  constructor(private profileService: ProfileService) {}
+  constructor(private profileService: ProfileService,private router: Router) {}
 
   ngOnInit() {
     this.loadProfile();
@@ -24,6 +25,11 @@ export class ProfilePage implements OnInit {
         console.error('Error loading profile:', error);
       }
     );
+  }
+  logout() {
+    // Clear any session or token data if necessary
+    console.log('Logging out...');
+    this.router.navigate(['/login']); // Redirect to the login page
   }
 
   updateProfile() {
